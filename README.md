@@ -1,69 +1,81 @@
 # frontend-template
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue 3 + Vite + TailwindCSS 前端项目模板
 
-## Recommended IDE Setup
+## 推荐的 IDE 配置
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (请禁用 Vetur 插件)
 
-## Recommended Browser Setup
+## 推荐的浏览器配置
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+- 基于 Chromium 的浏览器 (Chrome, Edge, Brave 等):
   - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+  - [在 Chrome DevTools 中开启自定义对象格式化](http://bit.ly/object-formatters)
 - Firefox:
   - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+  - [在 Firefox DevTools 中开启自定义对象格式化](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-## Customize configuration
+## 自定义配置
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+参考 [Vite 配置文档](https://cn.vite.dev/config/)
 
-## Project Setup
+## 项目设置
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发环境编译和热重载
 
 ```sh
 pnpm dev
 ```
 
-### Compile and Minify for Production
+### 生产环境编译和压缩
 
 ```sh
 pnpm build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### 使用 [Vitest](https://cn.vitest.dev/) 运行单元测试
 
 ```sh
 pnpm test:unit
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### 使用 [Playwright](https://playwright.dev) 运行端到端测试
 
 ```sh
-# Install browsers for the first run
+# 首次运行需要安装浏览器
 npx playwright install
 
-# When testing on CI, must build the project first
+# 在 CI 环境测试时,必须先构建项目
 pnpm build
 
-# Runs the end-to-end tests
+# 运行端到端测试
 pnpm test:e2e
-# Runs the tests only on Chromium
+# 仅在 Chromium 上运行测试
 pnpm test:e2e --project=chromium
-# Runs the tests of a specific file
+# 运行指定文件的测试
 pnpm test:e2e tests/example.spec.ts
-# Runs the tests in debug mode
+# 在调试模式下运行测试
 pnpm test:e2e --debug
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 使用 [ESLint](https://eslint.org/) 进行代码检查
 
 ```sh
 pnpm lint
 ```
+
+## 技术栈
+
+- **框架**: Vue 3.5
+- **构建工具**: Vite 7.3
+- **CSS 框架**: TailwindCSS 4.1
+- **状态管理**: Pinia 3.0
+- **路由**: Vue Router 4.6
+- **包管理器**: pnpm
+- **单元测试**: Vitest
+- **E2E 测试**: Playwright
+- **代码质量**: ESLint + Prettier + Oxlint
